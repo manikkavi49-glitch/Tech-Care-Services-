@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techcare.services" >
+
+    <application
+        android:icon="@drawable/logo"
+        android:label="TechCare Services"
+        android:roundIcon="@drawable/logo"
+        android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".SupportActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AdminUserListActivity" />
+    </application>
+
+</manifest>

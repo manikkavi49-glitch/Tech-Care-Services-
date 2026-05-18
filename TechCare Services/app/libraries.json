@@ -1,0 +1,51 @@
+[
+  {
+    "artifactId": "appcompat",
+    "excludes": [],
+    "groupId": "androidx.appcompat",
+    "versionName": "1.4.1"
+  },
+  {
+    "artifactId": "material",
+    "excludes": [],
+    "groupId": "com.google.android.material",
+    "versionName": "1.5.0"
+  },
+  {
+    "artifactId": "constraintlayout",
+    "excludes": [],
+    "groupId": "androidx.constraintlayout",
+    "versionName": "2.1.3"
+  },
+  {
+    "artifactId": "annotation",
+    "excludes": [],
+    "groupId": "androidx.annotation",
+    "versionName": "1.3.0"
+  },
+  {
+    "artifactId": "multidex",
+    "excludes": [],
+    "groupId": "androidx.multidex",
+    "versionName": "2.0.1"
+  },
+  {
+    "artifactId": "firebase-auth",
+    "excludes": [],
+    "groupId": "com.google.firebase",
+    "versionName": "19.4.0"
+  },
+  {
+    "artifactId": "play-services-auth",
+    "excludes": [],
+    "groupId": "com.google.android.gms",
+    "versionName": "18.1.0"
+  },
+  {
+    "artifactId": "firebase-database",
+    "excludes": [],
+    "groupId": "com.google.firebase",
+    "scope": "compile",
+    "versionName": "19.3.1"
+  }
+]

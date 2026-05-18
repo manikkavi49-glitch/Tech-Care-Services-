@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Portal"
+                    android:textColor="#D32F2F"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap items to manage"
+                    android:textColor="#777777"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAdminLogout"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_oval"
+                android:backgroundTint="#333333"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnManageUsers"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_oval"
+            android:backgroundTint="#2196F3"
+            android:text="Manage Registered Users"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listViewAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="16dp"
+            android:paddingBottom="20dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fullImageOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EE000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imgFullSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="matrix" />
+
+        <Button
+            android:id="@+id/btnCloseFullImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="30dp"
+            android:background="@android:color/transparent"
+            android:text="Close ✕"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnZoomOut"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_oval"
+                android:backgroundTint="#AA000000"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btnZoomIn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_oval"
+                android:backgroundTint="#AA000000"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:text="Pinch or use buttons to Zoom"
+            android:textColor="#AAAAAA" />
+    </FrameLayout>
+
+</FrameLayout>

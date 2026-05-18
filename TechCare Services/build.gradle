@@ -1,0 +1,20 @@
+buildscript {
+repositories {
+google()
+mavenCentral()
+jcenter() // Often has cached versions that work on mobile
+}
+dependencies {
+// Use an older, very stable plugin version
+classpath 'com.google.gms:google-services:4.3.10'
+}
+}
+
+allprojects {
+repositories {
+google()
+mavenCentral()
+jcenter()
+maven { url "https://maven.google.com" }
+}
+}
